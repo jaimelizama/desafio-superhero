@@ -19,7 +19,6 @@ formElement.submit(function (event) {
         "El número ingresado no arrojó ningún resultado.\nFavor intente nuevamente con otro número :)"
       );
     } else {
-      //$("#result").text(superhero.name); // Probando el resultado
       $("#main-content").show();
       let heroImage = superhero.image.url;
       $("#hero-image").attr("src", superhero.image.url);
@@ -30,10 +29,6 @@ formElement.submit(function (event) {
       $("#hero-first-appearance").text(superhero.biography["first-appearance"]);
       $("#hero-height-inch").text(superhero.appearance.height[0]);
       $("#hero-height-cm").text(superhero.appearance.height[1]);
-      //superhero.appearance.height.forEach((element) => {
-      // $("#hero-height").append(`${element}`);
-      // console.log(element);
-      // });
       $("#hero-weight-lb").text(superhero.appearance.weight[0]);
       $("#hero-weight-kg").text(superhero.appearance.weight[1]);
       $("#hero-aliases").text(superhero.biography.aliases.join(" - "));
